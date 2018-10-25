@@ -1,4 +1,4 @@
-package com.skywalk.todo.domain.factories;
+package com.skywalk.todo.common.factories;
 
 import com.skywalk.todo.application.model.NewTodoModel;
 import com.skywalk.todo.application.model.TodoModel;

@@ -4,7 +4,7 @@ import com.skywalk.todo.application.exceptions.TodoNotFoundException;
 import com.skywalk.todo.application.model.NewTodoModel;
 import com.skywalk.todo.application.model.TodoModel;
 import com.skywalk.todo.application.services.TodoService;
-import com.skywalk.todo.domain.factories.TodoFactory;
+import com.skywalk.todo.common.factories.TodoFactory;
 import com.skywalk.todo.domain.model.Todo;
 import com.skywalk.todo.domain.repository.TodoRepository;
 import lombok.AllArgsConstructor;
