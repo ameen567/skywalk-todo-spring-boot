@@ -1,0 +1,304 @@
+Automation Test
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class Join {
+	 WebDriver driver;
+		@BeforeTest
+		public void lauchingBrowser()
+		{
+			driver=new ChromeDriver();
+			driver.get("http://www.goinglobal.com/demo-registration-form-november-16-2018-0");
+		}
+		@Test(priority=1)
+		public void Register()
+		{
+			driver.findElement(By.xpath("//input[@name='submitted[name]']")).sendKeys("ameen");
+			driver.findElement(By.xpath("//input[@name='submitted[phone]']")).sendKeys("0835927451");
+			driver.findElement(By.xpath("//input[@id='edit-submitted-organization-university']")).sendKeys("Madurai kamaraj university");
+		}
+		@Test(priority=2)
+		public void details()
+		{
+			driver.findElement(By.xpath("//input[@name='submitted[department]']")).sendKeys("IT");
+			driver.findElement(By.xpath("//input[@name='submitted[title]']")).sendKeys("Mr");
+			driver.findElement(By.xpath("//input[@id='edit-submitted-e-mail-address']")).sendKeys("ameenmohamed747@gmail.com");
+		}
+		@Test(priority=3)
+		public void Title()
+		{
+			driver.findElement(By.xpath("//textarea[@name='submitted[comments]']")).sendKeys("hello,");
+			driver.findElement(By.xpath("//input[@class='webform-submit button-primary form-submit']")).click();
+     }
+			@AfterTest
+		public void close()
+		{
+			driver.quit();
+			
+			
+
+}}
+Manual Test
+
+Project Name : Facebook
+Module Name  : Login
+Created By   : Ameen
+Creation Date : 10-28-2018
+Reviewed By   : Test Lead
+Reviewed Date : MM-DD-YEAR   
+
+Test case    B.R       Description          Steps                         Data          E.R              A.R           Results     Comments   BUG-ID       
+   ID       Number                                                
+                                                                                      URL Shown
+1           001        To verify          To Launch Url                 Http:/:Url    verify the       IT Wants
+                     Registration Link  view the Registration           Google.com   Registration is  To Displayed
+                                       link is displayed in home page                 Displayed
+
+2           002       First Name           Enter Details                  Ameen       First Last        First Name
+                       Last Name                IN                        Ahamed      Is Displayed   Should be Displayed
+                                                                                                 
+
+3           003         Address            Enter Details                 NO: 35,       Address is      Address Should be
+                                               IN                     Arendse Street   Displayed          Displayed
+
+4           004         Email              Enter Details              ameenmohamed     Email is        Email Should be 
+                                               IN                     747@gmail.com    Displayed          Displayed
+                                                
+5           005         phone              Enter Details               0835927451      Phone is        Phone Should be  
+                                               IN                                      Displayed          Displayed
+                                                
+6           006         Gender             Enter Details                 Male/       Gender Male/        Gender Male/  
+                                               IN                       Female     Female is Displayed  Female Should be
+                                                                                                          Displayed
+7           007         Hoobies            Enter Details               Cricket     Hobbies:Cricket     Hobbies:Cricket                                                
+                                               IN                      Movies      Movies Hockey      Movies Hockey Should
+                                                                       Hockey      is Displayed         be Displayed
+                                                
+8          008          Languages         Enter Details                Arabic       Arabic is          Arabic Should be 
+                                              IN                                    Displayed             Displayed
+                                                
+9          009           Skills           Enter Details               C++           C++ is             C++ Should be 
+                                              IN                                   Displayed             Displayed
+                                                
+10         010          Country           Enter Details            AUSTRALIA       AUSTRALIA is        AUSTRALIA Should be 
+                                               IN                                   Displayed            Displayed
+                                                
+11         011        State Country       Enter Details            DENMARK          DENMARK is        DENMARK Should be   
+                                              IN                                    Displayed          Displayed
+                    
+12         012        Date of Birth       Enter Details          1986-APRIL-9     1986-APRIL-9       1986-APRIL-9 Should be 
+                                              IN                                  is Displayed          Displayed
+                                                
+13        013          Password           Enter Details           Blue567         Blue567 is           Blue567 Should be 
+                                              IN                                  Displayed              Displayed
+                                                
+14        014         Confirm             Enter Details           Blue567         Blue567 is           Blue567 Should be 
+                      Password                IN                                  Displayed             Displayed
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
